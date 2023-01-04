@@ -1,4 +1,3 @@
-hello.yaml
 name: "say hello on each pull"
 on : 
     push : # excecuted on all push
@@ -11,4 +10,4 @@ on :
           # The follwing step execute a shell script 
           - name : "say hello"
             run : |
-              echos "Hello, word !"
+              echos "Hello, word !" 
