@@ -2,7 +2,7 @@ name: "say hello on each pull"
 on : 
   push : # excecuted on all push
 jobs : 
-  say hello : # first job déclaration 
+  say_hello : # first job déclaration 
     name: "say hello"
     run-on : unbunto-latest
     steps: 
@@ -10,7 +10,7 @@ jobs :
       - name : "say hello"
       - run : |
             echos "Hello, word !" 
-  bonjour : # Premiere déclaration
+  dit_bonjour_a_jacob : # Premiere déclaration
     name: "dit bonjour"
     run-on: unbunto-latest
     steps:
