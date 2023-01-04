@@ -9,5 +9,5 @@ jobs:
       # The following step execute a shell script
       - name: "say hello"
         run: |
-            echos "Hello, word !" 
+            echo "Hello, word !" 
   
