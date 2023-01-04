@@ -1,13 +1,20 @@
 name: "say hello on each pull"
 on : 
-    push : # excecuted on all push
-
-  jobs : 
-      say hello : # first job déclaration 
-        name: "say hello"
-        run-on : unbuto-latest
-        steps: 
-          # The follwing step execute a shell script 
-          - name : "say hello"
-            run : |
-              echos "Hello, word !" 
+  push : # excecuted on all push
+jobs : 
+  say hello : # first job déclaration 
+    name: "say hello"
+    run-on : unbunto-latest
+    steps: 
+      # The follwing step execute a shell script 
+      - name : "say hello"
+      - run : |
+            echos "Hello, word !" 
+  bonjour : # Premiere déclaration
+    name: "dit bonjour"
+    run-on: unbunto-latest
+    steps:
+      # The follwing step execute a shell script
+      - name: "dit bonjour"
+      - run : |
+            echos "bonjour jacob"
