@@ -4,7 +4,7 @@ on:
 jobs: 
   say_hello: # first job déclaration 
     name: "say hello"
-    runs-on: unbunto-latest
+    runs-on: ubunto-latest
     steps: 
       # The follwing step execute a shell script 
       - name: "say hello"
