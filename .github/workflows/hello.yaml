@@ -6,7 +6,7 @@ jobs:
     name: "say hello"
     runs-on: ubunto-latest
     steps: 
-      # The follwing step execute a shell script 
+      # The following step execute a shell script
       - name: "say hello"
         run: |
             echos "Hello, word !" 
