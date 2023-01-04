@@ -4,17 +4,10 @@ on:
 jobs: 
   say_hello: # first job declaration
     name: "say hello"
-    run-on: ubunto-latest
+    run-on: ubuntu-latest
     steps: 
       # The following step execute a shell script
       - name: "say hello"
         runs: |
             echos "Hello, word !" 
-  dit_bonjour_a_jacob: # Premiere declaration
-    name: "dit bonjour"
-    run-on: ubunto-latest
-    steps:
-      # The following step execute a shell script
-      - name: "dit bonjour"
-        runs: |
-            echos "bonjour jacob"
+  
