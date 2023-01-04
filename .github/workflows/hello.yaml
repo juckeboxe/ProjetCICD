@@ -4,9 +4,17 @@ on:
 jobs: 
   say_hello: # first job déclaration 
     name: "say hello"
-    runs-on: ubunto-latest
+    run-on: ubunto-latest
     steps: 
-      # The following step execute a shell script
+      # The follwing step execute a shell script 
       - name: "say hello"
-        run: |
+      - run: |
             echos "Hello, word !" 
+  dit_bonjour_a_jacob: # Premiere déclaration
+    name: "dit bonjour"
+    run-on: ubunto-latest
+    steps:
+      # The following step execute a shell script
+      - name: "dit bonjour"
+      - run: |
+            echos "bonjour jacob"
